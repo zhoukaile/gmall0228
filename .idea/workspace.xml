@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039eda45-a41c-4008-97c6-b8fe1da292f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmall-manger-web/src/main/resources/templates/attrListPage.html" afterPath="$PROJECT_DIR$/gmall-manger-web/src/main/resources/templates/attrListPage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/.mvn/wrapper/maven-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/.mvn/wrapper/maven-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/mvnw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/mvnw.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/src/main/java/com/atguigu/gmall/order/GmallOrderWebApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/src/main/java/com/atguigu/gmall/order/controller/UserAddressController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmall-order-web/src/test/java/com/atguigu/gmall/order/GmallOrderWebApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdfs-client-java" afterPath="$PROJECT_DIR$/fastdfs-client-java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/gmall-parent/target/" />
     <ignored path="$PROJECT_DIR$/gmall-bean/target/" />
@@ -39,18 +50,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MangerController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmall-manger-web/src/main/java/com/atguigu/gmall/manger/controller/MangerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -566,7 +566,7 @@
       <workItem from="1530578500075" duration="28430000" />
       <workItem from="1530629345505" duration="6349000" />
       <workItem from="1530665363118" duration="21816000" />
-      <workItem from="1530760194767" duration="5980000" />
+      <workItem from="1530760194767" duration="6902000" />
     </task>
     <servers />
   </component>
@@ -594,7 +594,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86197000" />
+    <option name="totallyTimeSpent" value="87119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,13 +751,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/atguigu/gmall/order/controller/UserAddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#356#357#0" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,6 +1089,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/atguigu/gmall/order/controller/UserAddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
