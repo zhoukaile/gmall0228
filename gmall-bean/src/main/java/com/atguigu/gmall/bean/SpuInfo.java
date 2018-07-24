@@ -1,12 +1,11 @@
 package com.atguigu.gmall.bean;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 public class SpuInfo implements Serializable {
+
     @Column
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,13 +20,28 @@ public class SpuInfo implements Serializable {
     @Column
     private  String catalog3Id;
 
-    public SpuInfo() {
+    /*存属性名集合*/
+    @Transient
+    private List<SpuSaleAttr> spuSaleAttrList;
+    /*spuimg集合*/
+    @Transient
+    private List<SpuImage> spuImageList;
+
+
+    public List<SpuSaleAttr> getSpuSaleAttrList() {
+        return spuSaleAttrList;
     }
 
-    public SpuInfo(String spuName, String description, String catalog3Id) {
-        this.spuName = spuName;
-        this.description = description;
-        this.catalog3Id = catalog3Id;
+    public void setSpuSaleAttrList(List<SpuSaleAttr> spuSaleAttrList) {
+        this.spuSaleAttrList = spuSaleAttrList;
+    }
+
+    public List<SpuImage> getSpuImageList() {
+        return spuImageList;
+    }
+
+    public void setSpuImageList(List<SpuImage> spuImageList) {
+        this.spuImageList = spuImageList;
     }
 
     public String getId() {
@@ -60,15 +74,5 @@ public class SpuInfo implements Serializable {
 
     public void setCatalog3Id(String catalog3Id) {
         this.catalog3Id = catalog3Id;
-    }
-
-    @Override
-    public String toString() {
-        return "SpuInfo{" +
-                "id='" + id + '\'' +
-                ", spuName='" + spuName + '\'' +
-                ", description='" + description + '\'' +
-                ", catalog3Id='" + catalog3Id + '\'' +
-                '}';
     }
 }

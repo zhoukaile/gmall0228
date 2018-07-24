@@ -5,26 +5,20 @@ import java.io.Serializable;
 import java.util.List;
 
 public class BaseAttrInfo implements Serializable {
+
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 获取mysql自动增长的主键信息
     private String id;
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private String attrName;
     @Column
     private String catalog3Id;
+
+    // 属性值的集合 ,如果表中没有字段，但是，实体类需要的时候，则加@Transient注解！
     @Transient
     private List<BaseAttrValue> attrValueList;
 
-    public BaseAttrInfo() {
-    }
-
-    public BaseAttrInfo(String id, String attrName, String catalog3Id, List<BaseAttrValue> attrValueList) {
-        this.id = id;
-        this.attrName = attrName;
-        this.catalog3Id = catalog3Id;
-        this.attrValueList = attrValueList;
-    }
 
     public List<BaseAttrValue> getAttrValueList() {
         return attrValueList;
@@ -38,32 +32,23 @@ public class BaseAttrInfo implements Serializable {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getAttrName() {
         return attrName;
-    }
-
-    public void setAttrName(String attrName) {
-        this.attrName = attrName;
     }
 
     public String getCatalog3Id() {
         return catalog3Id;
     }
 
-    public void setCatalog3Id(String catalog3Id) {
-        this.catalog3Id = catalog3Id;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "BaseAttrInfo{" +
-                "id='" + id + '\'' +
-                ", attrName='" + attrName + '\'' +
-                ", catalog3Id='" + catalog3Id + '\'' +
-                '}';
+    public void setAttrName(String attrName) {
+        this.attrName = attrName;
+    }
+
+    public void setCatalog3Id(String catalog3Id) {
+        this.catalog3Id = catalog3Id;
     }
 }

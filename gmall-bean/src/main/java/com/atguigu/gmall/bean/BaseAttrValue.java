@@ -1,28 +1,30 @@
 package com.atguigu.gmall.bean;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 public class BaseAttrValue implements Serializable {
+
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 获取mysql自动增长的主键信息
     private String id;
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private String valueName;
+
     @Column
     private String attrId;
 
-    public BaseAttrValue() {
+    // 追加平台属性值！
+    @Transient
+    private String urlParam;
+
+    public String getUrlParam() {
+        return urlParam;
     }
 
-    public BaseAttrValue(String id, String valueName, String attrId) {
-        this.id = id;
-        this.valueName = valueName;
-        this.attrId = attrId;
+    public void setUrlParam(String urlParam) {
+        this.urlParam = urlParam;
     }
 
     public String getId() {
@@ -47,14 +49,5 @@ public class BaseAttrValue implements Serializable {
 
     public void setAttrId(String attrId) {
         this.attrId = attrId;
-    }
-
-    @Override
-    public String toString() {
-        return "BaseAttrValue{" +
-                "id='" + id + '\'' +
-                ", valueName='" + valueName + '\'' +
-                ", attrId='" + attrId + '\'' +
-                '}';
     }
 }
