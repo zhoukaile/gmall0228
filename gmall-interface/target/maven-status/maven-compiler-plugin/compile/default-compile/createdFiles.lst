@@ -1,1 +1,8 @@
+com\atguigu\gmall\service\UserAddressService.class
+com\atguigu\gmall\service\SpuInfoService.class
+com\atguigu\gmall\service\CartService.class
+com\atguigu\gmall\service\OrderService.class
+com\atguigu\gmall\service\ListService.class
+com\atguigu\gmall\service\UserInfoService.class
+com\atguigu\gmall\service\ItemService.class
 com\atguigu\gmall\service\ManageService.class

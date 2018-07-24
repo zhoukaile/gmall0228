@@ -23,6 +23,10 @@ public interface UserInfoService {
     // 删除
     void  del(UserInfo userInfo);
 
+    //用户点单登录
+    UserInfo login(UserInfo userInfo);
 
+    // 验证方法是否有无token
+    UserInfo verify(String userId);
 
 }
